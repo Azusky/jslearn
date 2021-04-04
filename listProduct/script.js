@@ -5,7 +5,7 @@ let listOfWishesNow = ["Salt", "Pepper", "Sugar"];
 const productListID = "listOfProducts";
 const displayDivID = "myList";
 
-let getList = () => {
+function getList() {
     let list = document.getElementById(productListID);
     if (list) {
         return list;
@@ -13,18 +13,9 @@ let getList = () => {
     list = document.createElement('ol');
     list.setAttribute('id', productListID);
 
-    // if (htmlList != undefined) {
-    //     return htmlList;
-    // }
-
-    // htmlList = document.createElement('ol')
     var myListDiv = document.getElementById(displayDivID);
     myListDiv.appendChild(list);
     return list;
-
-
-    // return htmlList;
-
 }
 function listProducts(listP) {
     var list = getList();
@@ -46,18 +37,7 @@ function addProduct() {
     vipProduct = confirm("This is Vip Product?");
     if (product != '') {
         if (vipProduct) {
-            // var myList = document.querySelector('ol');
             listOfWishesNow.unshift(product);
-            // var li = document.createElement('li')
-            // var container = document.getElementById("#myList");
-            // var content = container.innerHTML;
-            // container.innerHTML = content;
-
-            // //this line is to watch the result in console , you can remove it later
-            // console.log("Refreshed");
-            // listProducts(listOfWishesNow);
-            // li.textContent = product;
-            // myList.appendChild(li);
         }
         else {
 
@@ -71,6 +51,6 @@ function addProduct() {
     }
 }
 
-function startExecution () {
+function startExecution() {
     listProducts(listOfWishesNow);
 }
