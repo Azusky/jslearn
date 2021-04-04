@@ -1,5 +1,5 @@
 let bookShelf = {
-    top:    null,
+    top: null,
     middle: null,
     bottom: null
 }
@@ -13,7 +13,7 @@ bookShelf[where] = what;
 var table = document.createElement('table');
 
 var body = document.querySelector('body');
-for(var i in bookShelf){
+for (var i in bookShelf) {
     console.log(i)
     var tr = document.createElement("tr");
     var shelf = document.createElement("td");

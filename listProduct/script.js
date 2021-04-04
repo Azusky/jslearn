@@ -26,8 +26,6 @@ function listProducts(listP) {
         li.textContent = product;
         list.appendChild(li)
     });
-
-
 };
 
 
@@ -40,14 +38,12 @@ function addProduct() {
             listOfWishesNow.unshift(product);
         }
         else {
-
             listOfWishesNow.push(product);
         }
         listProducts(listOfWishesNow);
-
     }
     else {
-        alert('error');
+        alert('error, empty product');
     }
 }
 
