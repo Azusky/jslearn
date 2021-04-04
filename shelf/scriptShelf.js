@@ -6,7 +6,7 @@ let bookShelf = {
 
 
 var what = prompt("What to put on the shelf?");
-var where = prompt("On which shelf?");           
+var where = prompt("On which shelf?");
 
 bookShelf[where] = what;
 
@@ -24,4 +24,3 @@ for(var i in bookShelf){
 };
 body.appendChild(table)
 console.log(table);
-

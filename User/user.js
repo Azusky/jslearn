@@ -12,7 +12,7 @@ class User{
     period(){
         var creadUser = new Date(this.created);
         var toDay = Date.now();
-        var difDay = (toDay - creadUser) / (1000 * 3600 * 24); 
+        var difDay = (toDay - creadUser) / (1000 * 3600 * 24);
         return "ser has registered " + Math.floor(difDay) + " days ago"
     }
     render(){
@@ -33,8 +33,6 @@ class User{
         divuser.appendChild(imgU);
         divuser.appendChild(p);
         body.appendChild(divuser);
-        
-
     };
 
 };
@@ -49,4 +47,3 @@ const user3 = new User('Joy Day',132,'jd@mul.rp','2021-03-08','data:image/jpeg;b
 user3.render();
 
 console.log(user1.period());
-
