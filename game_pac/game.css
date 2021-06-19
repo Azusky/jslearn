@@ -1,0 +1,25 @@
+body {
+    background-color: #333;
+}
+
+.gameMap {
+    width: 500px;
+    height: 500px;
+    border: 10px solid #666;
+    color: white;
+}
+
+.gameMap div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #555;
+
+    float: left;
+}
+.gameMap .pig {
+    background-image: url(22236-pig-icon.png);
+}
+
+.gameMap .apple {
+    background-image: url(apple-icon.png);
+}
