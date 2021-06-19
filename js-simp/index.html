@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="moveLeft();drawMap()">🂲</button>
+    <span id="gameMap"></span>
+    <button onclick="moveRight();drawMap()">🂡</button>
+    <script>
+        const LEN = 20;
+        let rx = 10
+
+        function drawMap() {
+            gameMap.innerHTML = ""
+            for(let x=1; x<=LEN; x++) {
+                if(x ==rx) {
+
+                    gameMap.innerHTML += "🃏";
+
+                } else {
+
+                    gameMap.innerHTML += "┄"
+                }
+
+            }
+        }
+
+        function moveLeft() {
+            if( rx > 1){
+                rx--;
+                console.log(rx)
+            }
+
+        }
+        function moveRight() {
+            if(rx < LEN){
+                rx++
+            }
+
+        }
+
+        drawMap()
+
+    </script>
+
+</body>
+</html>
