@@ -1,0 +1,40 @@
+
+
+
+<body style="font-family: monospace;
+                line-height: 9px;">
+    <script>
+
+    let rx = 3
+    let ry = 3
+
+    let sx = 1
+    let sy = 1
+
+    for(y=1;y <=10; y++)
+    {
+        for(x=1 ;x <=10; x++)
+        {
+            if(sx == x && sy == y)
+            {
+                document.write(`S`)
+            }
+            else
+            {
+                if(rx == x && ry == y)
+                {
+                    document.write(`R`)
+                }
+                else
+                {
+                    document.write(`.`)
+                }
+            }
+        }
+        document.write('<br>')
+    }
+
+
+    </script>
+
+</body>

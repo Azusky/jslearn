@@ -1,0 +1,51 @@
+<script>
+
+    const PIN = "1234"
+    let pin = 0
+    let treis = 0
+    let balance = 4000
+    let maxMoney = 5000
+    while (true)
+    {
+        pin = prompt('ENTER PIN:')
+        treis++
+        if(pin == PIN)
+        {
+            alert(`
+                ACCES GRANTED\n\n
+                Your balance: ${balance}EUR
+            `)
+
+            let money = +prompt("WITHDRAW: ?")
+            if(money <= maxMoney)
+            {
+                if(money <= balance)
+                {
+                    balance -= money
+                    alert(`Your balance: ${balance}EUR`)
+                }
+                else
+                {
+                    alert('you do not have enough money')
+                }
+
+            }
+            else
+            {
+                alert('you cannot extract that amout')
+            }
+
+            break
+        }
+        else
+        {
+            alert('Wrong pin')
+            if(treis == 3)
+            {
+                alert('CARD BLOCKED')
+                break
+            }
+        }
+
+    }
+</script>

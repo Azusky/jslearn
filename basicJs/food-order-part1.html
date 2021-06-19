@@ -1,0 +1,15 @@
+<script>
+
+    foodName = `Salad`
+    taxDeliveri = 50
+    foodPriceValue = 100.00
+    foodPriceUnits = `MDL`
+
+    clintQuantity = prompt(
+        `MENU\n ${foodName}\n\n How many?`
+    )
+    foodCost = foodPriceValue * clintQuantity
+    totalCost = foodCost + taxDeliveri
+    alert(`you've ordered ${clintQuantity}\n food cost ${foodCost}\n deliveri cost ${taxDeliveri}\n bill ${totalCost}`)
+
+</script>

@@ -1,0 +1,18 @@
+<script>
+
+    childWidth = 20
+    childPadding = 10
+    childBorder = 1
+    childMargin = 20
+
+    parentWidth = 10
+
+    childSize = childWidth + (childPadding + childBorder + childMargin) *2
+    overflow = childSize > parentWidth
+    overflowPX = childSize - parentWidth
+
+    alert(`Horizontal child size ${childSize}px`)
+    alert(`child overflow? ${overflow}`)
+    alert(`overflow ${overflowPX}px`)
+    
+</script>

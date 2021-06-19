@@ -1,0 +1,34 @@
+<script>
+
+    const MAX_DISPLAY = 3000
+    const MIN_DISPLAY = 60
+    const SMALL_DISPLAY = 560
+    const MALL_DISPLAY = 980
+    const MWDIUM_DISPLAY = 1200
+
+    let windowWidth = innerWidth
+
+    if(MIN_DISPLAY <= windowWidth && windowWidth <= SMALL_DISPLAY)
+    {
+        alert(`extra small: ${windowWidth}`)
+    }
+
+    else if(SMALL_DISPLAY < windowWidth && windowWidth <= MALL_DISPLAY)
+    {
+        alert(`mall: ${windowWidth}`)
+    }
+    else if(MALL_DISPLAY < windowWidth && windowWidth <= MWDIUM_DISPLAY)
+    {
+        alert(`medium: ${windowWidth}`)
+    }
+    else if(MWDIUM_DISPLAY < windowWidth && windowWidth <= MAX_DISPLAY)
+    {
+        alert(`large: ${windowWidth}`)
+    }
+
+    else
+    {
+        alert('SOMETHING WRONG')
+    }
+
+</script>
