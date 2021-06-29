@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Burger Man</title>
+    <style>
+        #m div {
+            width: 48px;
+            height: 48px;
+            border: 1px solid gray;
+            float: left;
+        }
+        #m .man {
+            background-image: url(run-icon.png);
+        }
+        #m .man.left {
+                transform: scaleX(-1);
+
+        }
+        #m .burger {
+            background-image: url(burger-icon.png);
+        }
+    </style>
+</head>
+<body onkeydown="action()">
+    <div id="m">
+        <div></div>
+        <div id="man"></div>
+        <div id="burger"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

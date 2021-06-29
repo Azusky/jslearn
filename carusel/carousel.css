@@ -1,0 +1,25 @@
+body {
+    background-color: #222;
+}
+#carousel {
+    border: 5px solid #555;
+    width: 900px;
+    height: 700px;
+    color: white;
+    text-align: center;
+    margin: auto;
+
+}
+
+#carousel h2 {
+    margin: 5px;
+}
+
+#carouselSlides {
+    border: 2px solid white;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+
+
+}
