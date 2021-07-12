@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="chat">
+            <ol id="messages-list">
+
+            </ol>
+            <hr>
+            <div id="form">
+                <input type="text" id="message-input">
+                <button id="message-send" onclick="send(); render(messages)">send</button>
+            </div>
+        </div>
+        <script>
+            let messages = JSON.parse(localStorage.getItem("messages"))
+            console.log(messages)
+
+            const render = (messages) => {
+                let list = document.getElementById("messages-list")
+                list.innerHTML =``
+                messages.forEach((message) => {
+                    let li = document.createElement("li")
+
+                    message = message.replace(':)',`<img src = "icons\Emoji-Amazed-icon.png">`)
+                    li.innerHTML= message
+                    list.appendChild(li)
+                })
+            }
+
+            const send = () => {
+                let input = document.getElementById("message-input")
+                let message = input.value
+                if(message != ""){
+                    let wsRegex = /\s\s+/g;
+                    if( messages.length == 10)
+                    {
+                        messages.shift()
+                    }
+                    messages.push(message.replace(wsRegex,""))
+                    localStorage.setItem('messages', JSON.stringify(messages))
+                    input.value = ""
+                }
+
+
+
+            }
+
+            render(messages)
+        </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pub | Sub</title>
+</head>
+<body>
+    <div id="contantOne">
+
+    </div>
+    <div id="contantTwo">
+
+    </div>
+    <script>
+        let ml = 0
+        function moveSquere() {
+            ml++
+            if(ml>innerWidth-100)
+            {
+                ml = 0
+            }
+            contantOne.innerHTML = `
+            <div
+            style="width: 20px;
+                   height: 20px;
+                   background: red;
+                   margin-left: ${ml}px;">
+                </div>
+            `
+        }
+
+
+
+        let mcl = 0
+        function moveCircle() {
+            mcl++
+            if(mcl>innerWidth-100)
+            {
+                mcl = 0
+            }
+            contantTwo.innerHTML = `
+            <div
+            style="width: 20px;
+                   height: 20px;
+                   background: green;
+                   margin-left: ${mcl}px;
+                   border-radius: 100%">
+
+                </div>
+            `
+        }
+
+        function log()
+        {
+            console.log(' !!!olleH')
+        }
+        let subcribers = []
+        subcribers.push(moveSquere)
+        subcribers.push(moveCircle)
+
+        setInterval(()=>{
+            for(let i = 0; i< subcribers.length; i++)
+            {
+                subcribers[i]()
+            }
+        }, 10)
+
+    </script>
+</body>
+</html>

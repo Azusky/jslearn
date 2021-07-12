@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #333;
+        }
+        .carousel {
+            width: 800px;
+            height: 600px;
+            border: 5px solid #222;
+            perspective: 500px;
+        }
+        .carousel .slide {
+            width: inherit;
+            height: inherit;
+            border: 1px solid white;
+            position: relative;
+        }
+        .carousel .slide .sq {
+            width: 48px;
+            height: 48px;
+            border: 1px solid green;
+            position:absolute;
+        }
+        @keyframes fadeOut {
+            from{opacity: 1;}
+            to{opacity: 0;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <dic class="slide"
+            style="background-image: url(images/1035-800x600.jpg);
+
+                    "
+        >
+
+        </dic>
+
+    </div>
+    <script src="carousel.js"></script>
+</body>
+</html>
