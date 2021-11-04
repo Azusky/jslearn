@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    background-color: #222;
+    color: white;
+}
+.contacts ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.contacts li {
+    display: table;
+    padding: .25em;
+}
+.contacts li > *{
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.3s;
+
+}
+.contacts .avatar{
+    margin: 0;
+    padding-right: 1em;
+}
+.contacts .avatar img {
+    height: 3em;
+    /* margin-top:  -5px;
+    margin-left:  0.5em;
+    margin-right:  0.5em; */
+}
+.contacts .avatar .status {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 0.4em;
+    margin-left: -1em;
+
+}
+.contacts .info >span {
+    display: table-row;
+}
+.contacts .action{
+    /* padding-left: 2em; */
+    padding: 0 3em;
+
+}
+.add-more-details a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5em;
+}
+.add-details a{
+    text-decoration: none;
+    color: white;
+    margin: 0.3em;
+}
+.contacts .more-details a.dots {
+    text-decoration: none;
+    color: white;
+    background-color: #111;
+    display: block;
+    width: 1em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 0.20em;
+}
+.contacts .more-details a.dots:hover{
+    background-color: #151515;
+    color: white;
+}
+.contacts .add-more-details > div{
+    width: 0;
+    white-space: nowrap;
+    transition: 0.2s;
+    overflow: hidden
+}
+.contacts #first:target .add-more-details >div {
+    width: 100%;
+
+}
+.contacts #first:target  .avatar {
+    transition: 0.1s;
+    opacity: 0;
+}
+.contacts #first:target  .action {
+    transition: 0.15s;
+    opacity: 0;
+}
+.contacts #first:target  .info {
+    transition: 0.15s;
+    opacity: 0;
+
+}
+.contacts .action a.add {
+    text-decoration: none;
+    background-color: #111;
+    color: #ddd;
+    display: block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 2em;
+}
+
+.contacts .action a.add:hover{
+    background-color: #151515;
+    color: white;
+}
+.contacts .add-details > div {
+
+    width: 0;
+    white-space: nowrap;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.contacts #second:target .add-details >div {
+
+    width: 100%;
+}
+.contacts #second:target >* {
+    transform: translateX(-14em);
+}
+
+
+.status.off{
+    border: 1px solid #777;
+    background-color: #444;
+}
+.status.on{
+    border: 1px solid green;
+    background-color: lightgreen;
+}

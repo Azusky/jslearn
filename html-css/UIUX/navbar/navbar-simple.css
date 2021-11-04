@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: 'Oswald',sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #222;
+    font-size: 25px;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+
+}
+.navbar>ul {
+    /* border: 2px solid white; */
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar>ul>li {
+    /* border: 1px solid orange; */
+    padding: 20px 10px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.navbar>ul.branding {
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.navbar>ul.branding li:first-child{
+    font-size: 40px;
+}
+.navbar>ul.client{
+    margin-left: 150px;
+    /* margin-right: 100px; */
+}
