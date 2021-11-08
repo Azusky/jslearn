@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: 'Oswald', sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: #222;
+}
+.fix {
+    clear: both;
+}
+.navbar>ul {
+
+
+}
+.navbar>ul.branding{
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.navbar>ul.branding,
+.navbar>ul.main{
+    float: left;
+
+}
+.navbar>ul.client{
+    float: right;
+    margin-right: 50px;
+}
+.navbar>ul>li {
+    /* border: 1px solid orange; */
+    float: left;
+    padding: 20px 10px;
+}
+
+.navbar>ul>li>a{
+    color: white;
+}
