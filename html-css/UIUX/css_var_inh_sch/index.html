@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h1>Avanced CSS Topics</h1>
+        <div>
+            <h2>CSS Variables</h2>
+            <p>
+                <span class="highlighted">
+                    Custom properties (sometimes referred to as CSS variables or cascading variables) are entities
+                    defined by CSS authors that contain specific values to be reused throughout a document.
+                    They are set using custom property notation (e.g., --main-color: black;)
+                    and are accessed using the var() function (e.g., color: var(--main-color);).
+                </span>
+                Complex websites have very large amounts of CSS, often with a lot of repeated values. For example, the
+                same color might be used in hundreds of different places, requiring global search and replace if that
+                color needs to change. Custom properties allow a value to be stored in one place, then referenced in
+                multiple other places. An additional benefit is semantic identifiers. For example, --main-text-color is
+                easier to understand than #00ff00, especially if this same color is also used in other contexts.
+
+                Custom properties are subject to the cascade and inherit their value from their parent.
+                <a href="">read more...</a>
+            </p>
+        </div>
+        <div>
+            <h2>At-rules</h2>
+
+            <p>
+                <span>
+                    At-rules are CSS statements that instruct CSS how to behave. They begin with an at sign, '@' (U+0040
+                    COMMERCIAL AT), followed by an identifier and includes everything up to the next semicolon, ';'
+                    (U+003B SEMICOLON), or the next CSS block, whichever comes first.
+                </span>
+                Much like the values of properties, each at-rule has a different syntax. Nevertheless, several of them
+                can be grouped into a special category named conditional group rules. These statements share a common
+                syntax and each of them can include nested statements—either rulesets or nested at-rules. Furthermore,
+                they all convey a common semantic meaning—they all link some type of condition, which at any time
+                evaluates to either true or false. If the condition evaluates to true, then all of the statements within
+                the group will be applied.
+            </p>
+        </div>
+        <div>
+            <h2>@media</h2>
+
+            <p>
+                <span>
+                    The @media CSS at-rule can be used to apply part of a style sheet based on the result of one or more
+                    media queries.
+                </span>
+                With it, you specify a media query and a block of CSS to apply to the document if and only if the media
+                query matches the device on which the content is being used.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
